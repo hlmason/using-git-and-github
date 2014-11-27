@@ -24,21 +24,6 @@ h3#author {
 	margin-top: 10px;
 }
 
-.glyphicon-chevron-right, .glyphicon-chevron-down {
-	font-size: 0.85em;
-}
-
-li {
-	&.for-windows, &.for-mac {
-		> a {
-			color: #333;
-		}
-	}
-	&.for-mac {
-		margin-top: 10px;
-	}
-}
-
-h4:not(:first-child) {
+h4:not(.first-h4) {
 	margin-top: 25px;
 }
