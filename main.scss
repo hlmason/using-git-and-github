@@ -1,0 +1,44 @@
+/* ===================================
+    Element Selectors
+=================================== */
+
+h1, h3 {
+	text-align: center;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a:hover, a:focus {
+	text-decoration: none;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+// ===================================
+
+h3#author {
+	margin-top: 10px;
+}
+
+.glyphicon-chevron-right, .glyphicon-chevron-down {
+	font-size: 0.85em;
+}
+
+li {
+	&.for-windows, &.for-mac {
+		> a {
+			color: #333;
+		}
+	}
+	&.for-mac {
+		margin-top: 10px;
+	}
+}
+
+h4:not(:first-child) {
+	margin-top: 25px;
+}
