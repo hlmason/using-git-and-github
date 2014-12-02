@@ -4,8 +4,14 @@
 h1, h3 {
   text-align: center; }
 
+h4 {
+  margin-bottom: 0; }
+
 ul {
   list-style-type: none; }
+
+li {
+  font-size: 15px; }
 
 a:hover, a:focus {
   text-decoration: none; }
@@ -16,5 +22,26 @@ a:hover {
 h3#author {
   margin-top: 10px; }
 
-h4:not(.first-h4) {
-  margin-top: 25px; }
+h4:not(#first-h4) {
+  margin-top: 20px; }
+h4#third-h4 {
+  border-bottom: 1px solid #cecece;
+  padding-bottom: 40px; }
+h4.center {
+  text-align: center; }
+
+.command-line {
+  background-color: black;
+  border: 1px double white;
+  color: #e6e6e6;
+  font-family: "Menlo", sans-serif;
+  font-size: 13px;
+  margin-top: 4px;
+  padding: 4px; }
+  .command-line span.cursor {
+    border: 1px solid #e6e6e6; }
+  .command-line span.hard-code {
+    color: #00b300; }
+
+#space-at-bottom-of-page {
+  height: 100px; }

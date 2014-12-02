@@ -18,16 +18,81 @@
 			<h3 id="author">by Heidi Mason</h3>
 			<br>
 
-			<h4 class="first-h4">1. Download and Install Git</h4>
-				<ul>
-					<li><a href="http://git-scm.com/download/win" target="blank">For Windows</a></li>
-					<li><a href="http://git-scm.com/download/mac" target="blank">For Mac</a></li>
-				</ul>
+			<h4 id="first-h4">1. Download and Install Git</h4>
+			<ul>
+				<li>-<a href="http://git-scm.com/download/win" target="blank">For Windows</a></li>
+				<li>-<a href="http://git-scm.com/download/mac" target="blank">For Mac</a></li>
+			</ul>
 
-			<h4>2. Set Up a GitHub Account</h4>
+			<h4>2. Configure Git</h4>
+			<ul>
+				<li>Go to your command line.  For example:</li>
+				<li class="command-line">&nbsp;mc-macs-Mac-mini:~ mc-mac$&nbsp;<span class="cursor"></span></li>
+				<br>
+				
+				<li>Tell Git your name:</li>
+				<li class="command-line">&nbsp;git config --global user.name "<span class="hard-code">Your Name</span>"</li>
+				<br>
+				
+				<li>Tell Git the email address you want associated with your 
+				'commits':</li>
+				<li class="command-line">&nbsp;git config --global user.email "<span class="hard-code">Your Email Address</span>"</li>
+			</ul>
 
+<!-- 			<h4>3. Initialize Git</h4>
+			<ul>
+				<li>Navigate into your root project folder.  For example:</li>
+				<li class="command-line">&nbsp;mc-macs-Mac-mini:musiclaps mc-mac$&nbsp;<span class="cursor"></span></li>
+				<br>
+
+				<li>Type and enter:</li>
+				<li class="command-line">&nbsp;git init</li>
+			</ul> -->
+
+			<h4 id="third-h4">3. Set Up a <a href="https://github.com/" target="blank">GitHub Account</a></h4>
+
+			<h4>4a. Joining a Project as a Collaborator</h4>
+			<h4 class="center">Setting up</h4>
+			<ul>
+				<li>Navigate to the place on your computer where you want to store the project. For example:</li>
+				<li class="command-line">&nbsp;mc-macs-Mac-mini:htdocs mc-mac$&nbsp;<span class="cursor"></span></li>
+				<br>
+
+				<li>Make sure you are logged into your GitHub account.  Find the project info and clone the repository:</li>
+				<li class="command-line">&nbsp;git clone https://github.com/<span class="hard-code">username</span>/<span class="hard-code">reponame</span></li>
+				<br>
+
+				<li>Add a 'remote':</li>
+				<li class="command-line">&nbsp;git remote add origin https://github.com/<span class="hard-code">username</span>/<span class="hard-code">reponame</span></li>
+			</ul>
+
+			<h4 class="center">Getting Updated Files from and to GitHub</h4>
+			<ul>
+				<li>First, make sure your files are up-to-date with those on GitHub:</li>
+				<li class="command-line">&nbsp;git pull origin master</li>
+				<br>
+
+				<li>Check your 'commit' status:</li>
+				<li class="command-line">&nbsp;git status</li>
+				<li>Note: Do this as many times as you need throughout the commit process.</li>
+				<br>
+
+				<li>Add the paths of the files you are ready to commit:</li>
+				<li class="command-line">&nbsp;git add <span class="hard-code">filepath</span></li>
+				<br>
+
+				<li>When you are finished adding the files for this commit, then you are ready to commit.  Make a short note for your commit so that if you ever need, you have a general idea of what the commit was for (e.g. Added new feature, Revised content, etc.).</li>
+				<li class="command-line">&nbsp;git commit -m "<span class="hard-code">Your Commit Message</span>"</li>
+				<br>
+
+				<li>When you are finished commiting the files, then you are ready to send the updates to GitHub.</li>
+				<li class="command-line">&nbsp;git push origin master</li>
+				<br>
+			</ul>
 		</div>
 	</div>
+
+	<div id="space-at-bottom-of-page"></div>
 
 </body>
 </html>

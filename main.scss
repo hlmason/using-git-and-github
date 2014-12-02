@@ -6,8 +6,16 @@ h1, h3 {
 	text-align: center;
 }
 
+h4 {
+	margin-bottom: 0;
+}
+
 ul {
 	list-style-type: none;
+}
+
+li {
+	font-size: 15px;
 }
 
 a:hover, a:focus {
@@ -24,6 +32,37 @@ h3#author {
 	margin-top: 10px;
 }
 
-h4:not(.first-h4) {
-	margin-top: 25px;
+h4 {
+	&:not(#first-h4) {
+		margin-top: 20px;
+	}
+	&#third-h4 {
+		border-bottom: 1px solid #cecece;
+		padding-bottom: 40px;
+	}
+	&.center{
+		text-align: center;
+	}
+}
+
+.command-line {
+	background-color: black;
+	border: 1px double white;
+	color: darken(white, 10%);
+	font-family: "Menlo", sans-serif;
+	font-size: 13px;
+	margin-top: 4px;
+	padding: 4px;
+	span {
+		&.cursor {
+			border: 1px solid darken(white, 10%);
+		}
+		&.hard-code {
+			color: lighten(green, 10%);
+		}
+	}
+}
+
+#space-at-bottom-of-page {
+	height: 100px;
 }
