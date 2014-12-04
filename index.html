@@ -39,34 +39,46 @@
 				<li class="command-line">&nbsp;git config --global user.email "<span class="hard-code">Your email address</span>"</li>
 			</ul>
 
-<!-- 			<h4>3. Initialize Git</h4>
-			<ul>
-				<li>Navigate into your root project folder.  For example:</li>
-				<li class="command-line">&nbsp;mc-macs-Mac-mini:musiclaps mc-mac$&nbsp;<span class="cursor"></span></li>
-				<br>
-
-				<li>Type and enter:</li>
-				<li class="command-line">&nbsp;git init</li>
-			</ul> -->
-
 			<h4 id="third-h4">3. Set Up a <a href="https://github.com/" target="blank">GitHub Account</a></h4>
 
-			<h4>4a. Joining a Project as a Collaborator</h4>
-			<h4 class="center">Setting up</h4>
+			<h4>4a. Create a GitHub Project</h4>
 			<ul>
+				<li>Navigate into your project's root folder.  For example:</li>
+				<li class="command-line">&nbsp;mc-macs-Mac-mini:musiclaps mc-mac$&nbsp;<span class="cursor">&nbsp;</span></li>
+				<br>
+
+				<li>Initialize Git:</li>
+				<li class="command-line">&nbsp;git init</li>
+				<br>
+
+				<li>Make sure you are logged into your <a href="https://github.com/login" target="blank">GitHub account</a>.  At the upper-right corner of any page, click on <span class="glyphicon glyphicon-plus"></span> and then click <strong>New repository</strong>.  Fill in the fields and click <strong>Create Repository</strong>.</li>
+				<br>
+
+				<li>Add a 'remote':</li>
+				<li class="command-line">&nbsp;git remote add origin https://github.com/<span class="hard-code">username</span>/<span class="hard-code">reponame</span>.git</li>
+				<br>
+
+				<li>Go to Step 5.</li>
+			</ul>
+
+			<h4>4b. Join a GitHub Project as a Collaborator</h4>
+			<ul id="fourth-ul">
 				<li>Navigate to the place on your computer where you want to store the project. For example:</li>
 				<li class="command-line">&nbsp;mc-macs-Mac-mini:htdocs mc-mac$&nbsp;<span class="cursor">&nbsp;</span></li>
 				<br>
 
-				<li>Make sure you are logged into your <a href="https://github.com/" target="blank">GitHub account</a>.  Find the project info and clone the repository:</li>
+				<li>Make sure you are logged into your <a href="https://github.com/login" target="blank">GitHub account</a>.  Find the project info and clone the repository:</li>
 				<li class="command-line">&nbsp;git clone https://github.com/<span class="hard-code">username</span>/<span class="hard-code">reponame</span></li>
 				<br>
 
 				<li>Add a 'remote':</li>
 				<li class="command-line">&nbsp;git remote add origin https://github.com/<span class="hard-code">username</span>/<span class="hard-code">reponame</span>.git</li>
+				<br>
+
+				<li>Go to Step 5.</li>
 			</ul>
 
-			<h4 class="center">Getting Updated Files from and to GitHub</h4>
+			<h4>5. Get Updated Files from and to GitHub</h4>
 			<ul>
 				<li>First, make sure your files are up-to-date with those on GitHub:</li>
 				<li class="command-line">&nbsp;git pull origin master</li>

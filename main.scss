@@ -32,17 +32,14 @@ h3#author {
 	margin-top: 10px;
 }
 
-h4 {
-	&:not(#first-h4) {
-		margin-top: 20px;
-	}
-	&#third-h4 {
-		border-bottom: 1px solid #cecece;
-		padding-bottom: 40px;
-	}
-	&.center{
-		text-align: center;
-	}
+
+h4:not(#first-h4) {
+	margin-top: 20px;
+}
+
+h4#third-h4, ul#fourth-ul {
+	border-bottom: 1px solid #cecece;
+	padding-bottom: 40px;
 }
 
 .command-line {
@@ -61,6 +58,10 @@ h4 {
 			color: lighten(green, 10%);
 		}
 	}
+}
+
+.glyphicon-plus {
+	font-size: 12px;
 }
 
 #space-at-bottom-of-page {

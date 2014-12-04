@@ -24,11 +24,10 @@ h3#author {
 
 h4:not(#first-h4) {
   margin-top: 20px; }
-h4#third-h4 {
+
+h4#third-h4, ul#fourth-ul {
   border-bottom: 1px solid #cecece;
   padding-bottom: 40px; }
-h4.center {
-  text-align: center; }
 
 .command-line {
   background-color: black;
@@ -42,6 +41,9 @@ h4.center {
     border: 1px solid #e6e6e6; }
   .command-line span.hard-code {
     color: #00b300; }
+
+.glyphicon-plus {
+  font-size: 12px; }
 
 #space-at-bottom-of-page {
   height: 100px; }
